@@ -4,10 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- 引入ofa.js到您的项目 -->
+  <script src="./home//script/ofa.min.js"></script>
+  <style>
+    body {
+      height: calc(100vh - 32px);
+      margin: 16px 10%;
+      background-color: #D5E3D4;
+      overflow: auto;
+
+      & .home {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 120px calc(100% - 130px);
+        height: 100%;
+        overflow: hidden;
+      }
+    }
+  </style>
 </head>
 <body>
-  <button>
-    <a href="./form-designer/index.html">跳转到表单设计器</a>
-  </button>
+  <l-m src="./home/pages/page-header.html"></l-m>
+  <l-m src="./home/pages/page-content.html"></l-m>
+
+  <div class="home">
+    <page-header></page-header>
+    <page-content></page-content>
+  </div>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<template component>
+  <div class="list-item">
+    <div class="tip">{{ tip }}</div>
+    <div class="title">
+      <a id="title-a">{{num + 1}}、{{title}}</a>
+    </div>
+  </div>
+
+  <script>
+    export default {
+      attrs: {
+        num: 0,
+        title: '',
+        tip: '',
+        github: ''
+      }
+    }
+  </script>
+
+  <style>
+    .list-item {
+      position: relative;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      background: #4994C4;
+      & .tip {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 4px;
+        padding: 5px 10px;
+        background: #683632;
+      }
+
+      & .tip::after {
+        position: absolute;
+        content: '';
+        right: 40px;
+        bottom: -5px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid #683632;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+      }
+
+      & .title {
+        color: #fff;
+      }
+    }
+  </style>
+</template>

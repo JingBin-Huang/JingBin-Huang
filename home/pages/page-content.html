@@ -1,0 +1,35 @@
+<template component>
+  <l-m src="./../components/list-item.html"></l-m>
+
+  <div class="page-content">
+    <x-fill :value="list">
+      <list-item
+        :num="$index"
+        :title="$data.title"
+        :tip="$data.tip"
+        :github="$data.github"
+      ></list-item>
+    </x-fill>
+  </div>
+  <script>
+    export default {
+      data: {
+        list: [
+          {
+            title: '表单设计器 --- 以拖拽方式快速搭建表单',
+            tip: 'Vite + React + React Dnd',
+            github: 'https://github.com/JingBin-Huang/form-designer'
+          }
+        ]
+      }
+    }
+  </script>
+  <style>
+    :host {
+      overflow: auto;
+    }
+    .page-content {
+      margin: 30px 0;
+    }
+  </style>
+</template>

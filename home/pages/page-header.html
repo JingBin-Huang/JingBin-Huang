@@ -1,0 +1,49 @@
+<template component>
+  <header class="page-header">
+    <section class="logo">
+    </section>
+    <section class="description">
+      <div class="username">柔水终成雕刀🔪</div>
+      <div class="subject">每个不曾起舞的日子，都是对生命的辜负。☀️</div>
+    </section>
+  </header>
+  <script>
+
+  </script>
+  <style>
+    .page-header {
+      color: #fff;
+      display: grid;
+      grid-template-columns: 120px auto;
+      grid-template-rows: 120px;
+      & .logo {
+        background-color: #4182A4;
+        border-radius: 120px;
+      }
+      & .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+
+        & .username {
+          font-size: 30px;
+          width: 100%;
+          height: 40px;
+          margin-bottom: 10px;
+          padding: 10px 15px;
+          border-radius: 4px;
+          background-color: #006D87;
+        }
+
+        & .subject {
+          width: 100%;
+          height:25px;
+          padding: 10px 15px;
+          border-radius: 4px;
+          background-color: #006D87;
+        }
+      }
+    }
+  </style>
+</template>
