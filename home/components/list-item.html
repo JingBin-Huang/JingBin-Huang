@@ -1,8 +1,8 @@
 <template component>
   <div class="list-item">
     <div class="tip">{{ tip }}</div>
-    <div class="title">
-      <a href="{{ github }}" id="title-a">{{num + 1}}、{{title}}</a>
+    <div class="title" on:click="click">
+      {{num + 1}}、{{title}}
     </div>
   </div>
 
@@ -12,7 +12,12 @@
         num: 0,
         title: '',
         tip: '',
-        github: ''
+        linkAddress: ''
+      },
+      proto: {
+        click() {
+          window.open(this.linkAddress)
+        }
       }
     }
   </script>
@@ -49,7 +54,13 @@
 
       & .title {
         color: #fff;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
       }
+
+      & .title:hover {
+          border-bottom: 1px solid #fff;
+        }
     }
   </style>
 </template>
