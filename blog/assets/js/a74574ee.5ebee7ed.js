@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[463],{6727:e=>{e.exports=JSON.parse('{"title":"\u8868\u5355\u8bbe\u8ba1\u5668","slug":"/category/\u8868\u5355\u8bbe\u8ba1\u5668","permalink":"/blog/docs/category/\u8868\u5355\u8bbe\u8ba1\u5668","navigation":{"next":{"title":"\u5f00\u59cb","permalink":"/blog/docs/form-designer/start"}}}')}}]);
